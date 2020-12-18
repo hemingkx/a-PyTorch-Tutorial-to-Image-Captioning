@@ -12,7 +12,11 @@ I'm using `PyTorch 0.4` in `Python 3.6`.
 
 ---
 
-**27 Jan 2020**: Working code for two new tutorials has been added — [Super-Resolution](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Super-Resolution) and [Machine Translation](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Machine-Translation)
+To get the environment settled quickly:
+
+```
+pip install -r requirements.txt
+```
 
 ---
 
@@ -473,7 +477,7 @@ __Can I use pretrained word embeddings (GloVe, CBOW, skipgram, etc.) instead of 
 Yes, you could, with the `load_pretrained_embeddings()` method in the `Decoder` class. You could also choose to fine-tune (or not) with the `fine_tune_embeddings()` method.
 
 After creating the Decoder in [`train.py`](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning/blob/master/train.py), you should provide the pretrained vectors to `load_pretrained_embeddings()` stacked in the same order as in the `word_map`. For words that you don't have pretrained vectors for, like `<start>`, you can initialize embeddings randomly like we did in `init_weights()`. I recommend fine-tuning to learn more meaningful vectors for these randomly initialized vectors.
-  
+
 ```python
 decoder = DecoderWithAttention(attention_dim=attention_dim,
                                embed_dim=emb_dim,
@@ -483,7 +487,7 @@ decoder = DecoderWithAttention(attention_dim=attention_dim,
 decoder.load_pretrained_embeddings(pretrained_embeddings)  # pretrained_embeddings should be of dimensions (len(word_map), emb_dim)
 decoder.fine_tune_embeddings(True)  # or False
 ```
-  
+
 Also make sure to change the `emb_dim` parameter from its current value of `512` to the size of your pre-trained embeddings. This should automatically adjust the input size of the decoder LSTM to accomodate them.
 
 ---
