@@ -10,15 +10,23 @@ Questions, suggestions, or corrections can be posted as issues.
 
 I'm using `PyTorch 0.4` in `Python 3.6`.
 
----
-
 To get the environment settled quickly:
 
 ```
 pip install -r requirements.txt
 ```
 
----
+## Flickr30k Results
+
+After  train in stages (13 epoch without finetune and 7 epoch with fine-tune), I got BLEU-4 17.08 (best chekpoint).
+
+Flickr30k results in `eval.py`
+
+| Beam Size | Validation BLEU-4 | Test BLEU-4 |      |
+| :-------: | :---------------: | :---------: | ---- |
+|     1     |       22.64       |    23.33    |      |
+|     3     |       25.41       |    25.91    |      |
+|     5     |       25.64       |    25.71    |      |
 
 # Contents
 

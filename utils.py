@@ -272,7 +272,7 @@ def adjust_learning_rate(optimizer, shrink_factor):
 def accuracy(scores, targets, k):
     """
     Computes top-k accuracy, from predicted and true labels.
-
+    Top-5 Accuracy means the accuracy that top-5 prediction words contain labels
     :param scores: scores from the model
     :param targets: true labels
     :param k: k in top-k accuracy
