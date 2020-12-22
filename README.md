@@ -22,11 +22,11 @@ After  train in stages (13 epoch without finetune and 7 epoch with fine-tune), I
 
 Flickr30k results in `eval.py`
 
-| Beam Size | Validation BLEU-4 | Test BLEU-4 |      |
-| :-------: | :---------------: | :---------: | ---- |
-|     1     |       22.64       |    23.33    |      |
-|     3     |       25.41       |    25.91    |      |
-|     5     |       25.64       |    25.71    |      |
+| Beam Size | Validation BLEU-4 | Test BLEU-4 |
+| :-------: | :---------------: | :---------: |
+|     1     |       22.64       |    23.33    |
+|     3     |       25.41       |    25.91    |
+|     5     |       25.64       |    25.71    |
 
 # Contents
 
