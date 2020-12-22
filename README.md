@@ -1,3 +1,7 @@
+This is my ReImplementation of [a-PyTorch-Tutorial-to-Image-Captioning](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning) . If you are interested in this tutorial, **please check the original repo** 😊.
+
+------
+
 This is a **[PyTorch](https://pytorch.org) Tutorial to Image Captioning**.
 
 This is the first in [a series of tutorials](https://github.com/sgrvinod/Deep-Tutorials-for-PyTorch) I'm writing about _implementing_ cool models on your own with the amazing PyTorch library.
